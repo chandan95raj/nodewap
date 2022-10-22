@@ -1,0 +1,14 @@
+.mynav {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+
+}
+
+.mynav:hover {
+    color:blue;
+    border-bottom: 2px solid blue;
+    position: relative;
+}
+
+
+

@@ -1,0 +1,6 @@
+.icon_box {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    font-size: 20px;
+}
