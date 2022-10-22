@@ -1,4 +1,4 @@
-import Layout from "../layout";
+import Layout from "../cmp/layout";
 
 const Index =()=>{
   const design = (
