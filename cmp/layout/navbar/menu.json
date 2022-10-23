@@ -10,38 +10,7 @@
         "id":"2",
         "label":"Service",
         "url":"/service",
-        "dropdown" : true,
-        "dropdownMenu": [
-            {
-                "id":"d1",
-                "label":"Web design",
-                "url":"/"
-            },
-
-            {
-                "id":"d2",
-                "label":"Logo Design",
-                "url":"/"
-            },
-
-            {
-                "id":"d3",
-                "label":"Web Development",
-                "url":"/"
-            },
-
-            {
-                "id":"d4",
-                "label":"Content Writing",
-                "url":"/"
-            },
-
-            {
-                "id":"d5",
-                "label":"App Development",
-                "url":"/"
-            }
-        ]
+        "dropdown" : false        
     },
 
     {
@@ -54,7 +23,7 @@
     {
         "id":"4",
         "label":"Contact",
-        "url":"/contact",
+        "url":"/contact-us",
         "dropdown" : false
     }
 ]

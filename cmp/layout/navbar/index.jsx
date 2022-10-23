@@ -8,10 +8,14 @@ import {
 
 import data from "./menu.json";
 
+import Link from "next/link";
+
 const MenuDesign = (data)=>{
     const design =(
         <>
-            <Nav.Link className={`${Style.mynav} mx-4`} to={data.menuInfo.url}>{data.menuInfo.label}</Nav.Link>            
+        <button className={` btn btn-white rounded-0 ${Style.mynav} mx-4`}>
+            <Link href={data.menuInfo.url} >{data.menuInfo.label}</Link>
+        </button>           
         </>
     );
     return design;

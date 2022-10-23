@@ -1,10 +1,11 @@
+import Home from "../cmp/home";
 import Layout from "../cmp/layout";
 
 const Index =()=>{
   const design = (
       <>
          <Layout>
-          done
+            <Home />
           </Layout> 
       </>
   );
