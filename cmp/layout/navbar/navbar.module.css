@@ -1,14 +1,16 @@
 .mynav {
-    font-weight: bold;
     border-bottom: 2px solid white;
+}
 
+.mynav a{
+    color:black !important;
+    font-family: sans-serif;
+}
+.mynav a:hover{
+    color:blue !important;
 }
 
 .mynav:hover {
     color:blue;
     border-bottom: 2px solid blue;
-    position: relative;
 }
-
-
-

@@ -4,7 +4,7 @@ import {
     Col,
     Nav
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
+
 const Footer =()=>{
     const design = (
         <>
