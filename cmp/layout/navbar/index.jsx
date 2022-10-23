@@ -8,10 +8,14 @@ import {
 
 import data from "./menu.json";
 
+import Link from "next/link";
+
 const MenuDesign = (data)=>{
     const design =(
         <>
-            <Nav.Link className={`${Style.mynav} mx-4`} to={data.menuInfo.url}>{data.menuInfo.label}</Nav.Link>            
+        <button className={` btn btn-white rounded-0 ${Style.mynav} mx-4`}>
+            <Link href={data.menuInfo.url} >{data.menuInfo.label}</Link>
+        </button>
         </>
     );
     return design;
@@ -46,16 +50,16 @@ const NavbarCont =()=>{
                        {
                             data.map((item)=>{
                                 if(item.dropdown){
-                                  return <DropMenu menuInfo={item} key={item.id} />  
+                                  return <DropMenu menuInfo={item} key={item.id} />
                                 }
                                 return <MenuDesign menuInfo={item} key={item.id} />;
                             })
-                       } 
+                       }
 
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
-                </Navbar> 
+                </Navbar>
         </>
     );
     return design;

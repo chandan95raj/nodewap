@@ -10,7 +10,7 @@
         "id":"2",
         "label":"Service",
         "url":"/service",
-        "dropdown" : true,
+        "dropdown" : false,
         "dropdownMenu": [
             {
                 "id":"d1",
@@ -54,7 +54,7 @@
     {
         "id":"4",
         "label":"Contact",
-        "url":"/contact",
+        "url":"/contact-us",
         "dropdown" : false
     }
 ]

@@ -4,17 +4,16 @@ import {
     Col,
     Nav
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
 const Footer =()=>{
     const design = (
         <>
-            <div className="text-white px-5 py-5" style={{backgroundColor:"#000000"}}>
+            <div className={`text-white px-5 py-5 ${Style.allText}`} style={{backgroundColor:"#000000"}}>
                 <Row>
                     <Col md="4" style={{lineHeight:"20px"}}>
-                        <h5>Company</h5>
-                        <p>58 Howard Street #2 San Francisco, CA 941</p>
-                        <p>contact@aeroland.com</p>
-                        <p className="mb-4">(+68)1221 09876</p>
+                        <h5>nodewap it solution.pvt.ltd</h5>
+                        <p>4, Jiya Lal Roy Rd, Muzaffarpur, Bihar 842001</p>
+                        <p>nodewapitsolution@gmail.com</p>
+                        <p className="mb-4">094723 95194</p>
                         <div className={`${Style.icon_box}`}>
                             <i className="fa fa-twitter"></i>
                             <i className="fa fa-instagram"></i>
@@ -23,34 +22,32 @@ const Footer =()=>{
                         </div>
                     </Col>
                     <Col md="2" style={{lineHeight:"40px"}}>
-                        <h5>IT Services</h5>                    
-                        <Nav.Link to="">Managed IT</Nav.Link>
-                        <Nav.Link to="">IT Support</Nav.Link>
-                        <Nav.Link to="">IT Consultancy</Nav.Link>
-                        <Nav.Link to="">Cloud Computing</Nav.Link>
-                        <Nav.Link to="">Cyber Security</Nav.Link>                        
+                        <h5>IT Services</h5>
+                        <Nav.Link to="">website desigining</Nav.Link>
+                        <Nav.Link to="">Graphic designing</Nav.Link>
+                        <Nav.Link to="">Social media marketing</Nav.Link>
+                        <Nav.Link to="">mobile app developement</Nav.Link>
+                        <Nav.Link to="">digital marketing</Nav.Link>
+                        <Nav.Link to="">SEO,SEM</Nav.Link>
                     </Col>
                     <Col md="2" style={{lineHeight:"40px"}}>
                         <h5>Quick links</h5>
-                        <Nav.Link to="">Pick up locations</Nav.Link>
-                        <Nav.Link to="">Terms of Payment</Nav.Link>
-                        <Nav.Link to="">Privacy Policy</Nav.Link>
-                        <Nav.Link to="">Where to Find Us</Nav.Link>                        
+                        <Nav.Link to="">privacy policy</Nav.Link>
+                        <Nav.Link to="">cookies policy</Nav.Link>
+                        <Nav.Link to="">terms & conditions</Nav.Link>
                     </Col>
                     <Col md="2" style={{lineHeight:"40px"}}>
                         <h5>Support</h5>
-                        <Nav.Link to="">Forum Support</Nav.Link>
-                        <Nav.Link to="">Help & FAQ</Nav.Link>
-                        <Nav.Link to="">Contact Us</Nav.Link>
-                        <Nav.Link to="">Pricing and plans</Nav.Link>
-                        <Nav.Link to="">Cookies Policy</Nav.Link>
+                        <Nav.Link to="">help</Nav.Link>
+                        <Nav.Link to="">contact </Nav.Link>
+                        <Nav.Link to="">about</Nav.Link>
                     </Col>
-                    <Col md="2" className="d-flex justify-content-center align-items-center">
+                    <Col md="2">
                         <div>
                             <img src="google.webp" className="mb-3 rounded" />
-                            <img src="apple.webp" className="rounded"  />
+                            <img src="apple.webp" className="mb-3 rounded"  />
                         </div>
-                    </Col> 
+                    </Col>
                 </Row>
                 <hr className="mt-5" />
 
