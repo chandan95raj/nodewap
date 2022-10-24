@@ -7,7 +7,7 @@ const picCarosel = ()=>{
          <div className="row">
                 <div className="col-md-4">
                   <div className="card border-0 ">
-                  <Image src="/pic1.webp" alt="pic1" width="360px" height="270px" className='rounded' />
+                  <Image src="/pic1.webp" alt="pic1" width={360} height={270} className='rounded' />
                   <div className="py-2">
                     <h5>Precise projection of risks and potentials via advanced tools</h5>
                   </div>
@@ -16,7 +16,7 @@ const picCarosel = ()=>{
 
                 <div className="col-md-4">
                   <div className="card border-0 ">
-                  <Image src="/pic2.webp" alt="pic1" width="360px" height="270px" className='rounded' />
+                  <Image src="/pic2.webp" alt="pic2" width={360} height={270} className='rounded' />
                   <div className="py-2">
                   <h5>Precise projection of risks and potentials via advanced tools</h5>
                   </div>
@@ -25,7 +25,7 @@ const picCarosel = ()=>{
 
                 <div className="col-md-4">
                   <div className="card border-0 ">
-                  <Image src="/pic3.webp" alt="pic1" width="360px" height="270px" className='rounded' />
+                  <Image src="/pic3.webp" alt="pic3" width={360} height={270} className='rounded' />
                   <div className="py-2">
                   <h5>Precise projection of risks and potentials via advanced tools</h5>
                   </div>

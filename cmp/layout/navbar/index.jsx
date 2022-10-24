@@ -9,13 +9,16 @@ import {
 import data from "./menu.json";
 
 import Link from "next/link";
+import Logo from '../../shared/logo';
 
 const MenuDesign = (data)=>{
     const design =(
-        <>
-        <button className={` btn btn-white rounded-0 ${Style.mynav} mx-4`}>
-            <Link href={data.menuInfo.url} >{data.menuInfo.label}</Link>
-        </button>           
+        <>       
+            <Link href={data.menuInfo.url} passHref>               
+                <button className={` btn btn-white rounded-0 ${Style.mynav} mx-4`}>
+                    {data.menuInfo.label}
+                </button>    
+            </Link>       
         </>
     );
     return design;
@@ -42,7 +45,7 @@ const NavbarCont =()=>{
            <Navbar bg="white" expand="lg" className="shadow">
                 <Container fluid>
                     <Navbar.Brand href="#home">
-                        <img src="logo-dark.webp" width="160" height="47" />
+                        <Logo />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

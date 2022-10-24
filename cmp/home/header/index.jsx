@@ -42,7 +42,12 @@ const Header = ()=>{
                 </Col>
                 
                 <Col md="6">
-                    <Image src="/home-reputable-success.webp" width="630" height="740" />
+                    <Image 
+                        src="/home-reputable-success.webp" 
+                        width={630} 
+                        height={740} 
+                        alt="home-reputable-success"
+                    />
                 </Col>
             </Row>
          </Container>

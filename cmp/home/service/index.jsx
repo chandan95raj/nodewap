@@ -14,7 +14,7 @@ const ServData = (data)=>{
         <Col md="4" className={`${Style.myCard}`}>                   
             <Card.Body className="text-center p-4">
                 <div className={`${Style.iconBox} m-auto`}>
-                    <Image src={data.allData.path} width="100" height="104" />
+                    <Image src={data.allData.path} alt={data.allData.path} width={100} height={104} />
                 </div>
                 <Card.Title className={`${Style.cardTitle} py-4`}>{data.allData.title}</Card.Title>
                 <Card.Text>{data.allData.desc}
@@ -36,9 +36,7 @@ const Service =()=>{
                 </div>
                 <Row>
                     {
-                        data.map((item)=>{
-                            return <ServData allData={item} key={item.id} />
-                        })
+                        data.map((item,index)=><ServData allData={item} key={index} />)
                     }  
                 </Row>
                 <Row className={`mb-5`}>

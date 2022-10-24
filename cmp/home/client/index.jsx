@@ -19,7 +19,7 @@ const Client =()=>{
             <Container fluid>
                 <Row>
                     <Col md="6">
-                        <Image src="/home-reputable-success-about-image.webp" height="420" width="650" />
+                        <Image src="/home-reputable-success-about-image.webp" alt="home-reputable-success-about-image" height={420} width={650} />
                     </Col>
                     <Col md="6">
                         <p className={`${Style.desc}`}>

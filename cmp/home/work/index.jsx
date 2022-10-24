@@ -35,9 +35,7 @@ const CmpWork =()=>{
                 <h1 className={`${Style.title} text-center`}>what company can do?</h1>
                 <Row className="d-flex justify-content-between">
                     {
-                        data.map((item)=>{
-                            return <AllData allItems={item} />
-                        })
+                        data.map((item,index)=><AllData key={index} allItems={item} />)
                     }                     
                 </Row>
             </Container>

@@ -1,10 +1,10 @@
-import Client from "./homeCmp/client";
-import Header from "./homeCmp/header";
-import Service from "./homeCmp/service";
-import PicCarosel from "./homeCmp/picCarosel";
-import Contact from "./homeCmp/contact";
-import Work from "./homeCmp/work";
-import Story from "./homeCmp/story";
+import Client from "./client";
+import Header from "./header";
+import Service from "./service";
+import PicCarosel from "./picCarosel";
+import Contact from "./contact";
+import Work from "./work";
+import Story from "./story";
 
 
 const Home = ()=>{

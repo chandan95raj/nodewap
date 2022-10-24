@@ -1,7 +1,7 @@
 import NavbarCont from '../layout/navbar';
-import ItService from './service-cmp/itservice';
-import Work from './service-cmp/work';
-import Rating from './service-cmp/rating';
+import ItService from './itservice';
+import Work from './work';
+import Rating from './rating';
 import Footer from '../layout/footer';
 
 const Service = ()=>{

@@ -18,6 +18,11 @@ a {
   text-decoration: none !important;
 }
 
+@font-face {
+  font-family: "aquire";
+  src: url('/fonts/aquire.otf')
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
