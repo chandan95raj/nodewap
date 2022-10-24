@@ -1,20 +1,19 @@
 import Navbar from "../layout/navbar";
 import Footer from "../layout/footer";
-import ContactTitle from "./contact-title/index";
-import ContactSection from "./contact-section/index";
-import ContactInfo from "./contact-info/index";
-import ContactAction from "./contact-action/index";
+import Title from "./title/index";
+import Section from "./section/index";
+import Info from "./info/index";
+import Action from "./action/index";
 const Contact = () =>{
-  const design =(
+  return (
     <>
-    <Navbar />
-   <ContactTitle />
-   <ContactSection />
-   <ContactInfo />
-   <ContactAction />
-    <Footer />
+      <Navbar />
+        <Title />
+        <Section />
+        <Info />
+        <Action />
+      <Footer />
     </>
   );
-  return design;
 }
 export default Contact;

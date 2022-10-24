@@ -1,10 +1,3 @@
 import Contact from "../cmp/contact-us";
-const ContactUs = () =>{
-  const design =(
-    <>
-    <Contact />
-    </>
-  );
-  return design;
-}
+const ContactUs = () => <Contact />;
 export default ContactUs;

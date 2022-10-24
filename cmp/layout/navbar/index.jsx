@@ -13,7 +13,7 @@ import Link from "next/link";
 const MenuDesign = (data)=>{
     const design =(
         <>
-        <button className={` btn btn-white rounded-0 ${Style.mynav} mx-4`}>
+        <button className={`btn btn-white rounded-0 ${Style.mynav} mx-4`}>
             <Link href={data.menuInfo.url} >{data.menuInfo.label}</Link>
         </button>
         </>
