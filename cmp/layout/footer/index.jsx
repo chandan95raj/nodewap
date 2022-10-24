@@ -4,7 +4,7 @@ import {
     Col,
     Nav
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 const Footer =()=>{
     const design = (
         <>
@@ -16,39 +16,39 @@ const Footer =()=>{
                         <p>nodewapitsolution@gmail.com</p>
                         <p className="mb-4">094723 95194</p>
                         <div className={`${Style.icon_box}`}>
-                            <i className="fa fa-twitter"></i>
-                            <i className="fa fa-instagram"></i>
-                            <i className="fa fa-facebook"></i>
-                            <i className="fa fa-youtube"></i>
+                            <Nav.Link href="https://twitter.com"><i className="fa fa-twitter"></i></Nav.Link>
+                            <Nav.Link href="https://instagram.com/wapinstitution?igshid=YmMyMTA2M2Y="><i className="fa fa-instagram"></i></Nav.Link>
+                            <Nav.Link href="https://www.youtube.com/channel/UCx86YvOOdq5KLqENKq6ZOng"><i className="fa fa-facebook"></i></Nav.Link>
+                            <Nav.Link href="https://www.facebook.com/wapinstitution/"><i className="fa fa-youtube"></i></Nav.Link>
                         </div>
                     </Col>
                     <Col md="2" style={{lineHeight:"40px"}}>
-                        <h5>IT Services</h5>                    
-                        <Nav.Link to="">website desigining</Nav.Link>
-                        <Nav.Link to="">Graphic designing</Nav.Link>
-                        <Nav.Link to="">Social media marketing</Nav.Link>
-                        <Nav.Link to="">mobile app developement</Nav.Link>
-                        <Nav.Link to="">digital marketing</Nav.Link> 
-                        <Nav.Link to="">SEO,SEM</Nav.Link>                        
+                        <h5>IT Services</h5>
+                        <Nav.Link href="https://twitter.com">website desigining</Nav.Link>
+                        <Nav.Link href="">Graphic designing</Nav.Link>
+                        <Nav.Link href="">Social media marketing</Nav.Link>
+                        <Nav.Link href="">mobile app developement</Nav.Link>
+                        <Nav.Link href="">digital marketing</Nav.Link>
+                        <Nav.Link href="">SEO,SEM</Nav.Link>
                     </Col>
                     <Col md="2" style={{lineHeight:"40px"}}>
                         <h5>Quick links</h5>
-                        <Nav.Link to="">privacy policy</Nav.Link>
-                        <Nav.Link to="">cookies policy</Nav.Link>
-                        <Nav.Link to="">terms & conditions</Nav.Link>                        
+                        <Nav.Link href="">privacy policy</Nav.Link>
+                        <Nav.Link href="">cookies policy</Nav.Link>
+                        <Nav.Link href="">terms & conditions</Nav.Link>
                     </Col>
                     <Col md="2" style={{lineHeight:"40px"}}>
                         <h5>Support</h5>
-                        <Nav.Link to="">help</Nav.Link>
-                        <Nav.Link to="">contact </Nav.Link>
-                        <Nav.Link to="">about</Nav.Link>
+                        <Nav.Link href="">help</Nav.Link>
+                        <Nav.Link href="">contact </Nav.Link>
+                        <Nav.Link href="">about</Nav.Link>
                     </Col>
                     <Col md="2">
                         <div>
                             <img src="google.webp" className="mb-3 rounded" />
                             <img src="apple.webp" className="mb-3 rounded"  />
                         </div>
-                    </Col> 
+                    </Col>
                 </Row>
                 <hr className="mt-5" />
 

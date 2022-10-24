@@ -1,4 +1,4 @@
-import Style from "./style.module.css";
+import Style from "./header.module.css";
 import{
     Container,
     Row,
@@ -10,12 +10,13 @@ import{
 import Image from "next/image";
 
 const Header = ()=>{
-    const design=(
+    return (
         <>
          <Container fluid >
             <Row style={{paddingTop:"140px",paddingLeft:"80px"}}>
                 <h1 className={`${Style.title}`}>Make your business easier </h1>
             </Row>
+
             <Row style={{paddingLeft:"80px"}}>
                 <Col md="6" style={{paddingRight:"50px"}} >
                     <h1 className={`${Style.title}`}>with<span> nodwap </span> software company</h1>
@@ -39,6 +40,7 @@ const Header = ()=>{
                         <Button className="btn-block form-control py-3" variant="primary">Get a free consultation</Button>
                     </Form>
                 </Col>
+                
                 <Col md="6">
                     <Image src="/home-reputable-success.webp" width="630" height="740" />
                 </Col>
@@ -46,6 +48,5 @@ const Header = ()=>{
          </Container>
         </>
     );
-    return design;
 }
 export default Header;

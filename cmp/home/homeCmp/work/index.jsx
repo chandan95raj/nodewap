@@ -1,17 +1,17 @@
 import { Container,Row } from "react-bootstrap";
-import Style from "./style.module.css";
+import Style from "./work.module.css";
 
 import data from "./workData.json";
 
 const AllData=(data)=>{
 
-        const bgcolor = {
-            background : data.allItems.bgColor         
-        }
+    const bgcolor = {
+        background : data.allItems.bgColor         
+    }
 
-        const idcolor ={
-            color : data.allItems.idColor
-        }
+    const idcolor ={
+        color : data.allItems.idColor
+    }
 
     const design=(
         <>
@@ -29,7 +29,7 @@ const AllData=(data)=>{
 }
 
 const CmpWork =()=>{
-    const design =(
+    return (
         <>
             <Container fluid className="my-5 px-5">
                 <h1 className={`${Style.title} text-center`}>what company can do?</h1>
@@ -43,7 +43,6 @@ const CmpWork =()=>{
             </Container>
         </>
     );
-    return design;
 }
 
 export default CmpWork;
