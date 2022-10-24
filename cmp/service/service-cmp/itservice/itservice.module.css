@@ -15,14 +15,14 @@
 .home {
     font-family: sans-serif;
     font-size: 14px;
-    font-weight: 550;
+    font-weight: bold;
     color: #696969;
     letter-spacing: 2px;
     cursor: pointer;
 }
 
 .home:hover {
-    /* work remain */
+    border-bottom: 1px solid blue;
 }
 
 .it_service{

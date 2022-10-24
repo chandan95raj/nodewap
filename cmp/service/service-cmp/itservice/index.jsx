@@ -1,5 +1,5 @@
 import Style from './itservice.module.css';
-
+import Link from "next/link";
 const ItService = ()=>{
     return(
         <>
@@ -7,7 +7,7 @@ const ItService = ()=>{
                 <div className={`text-center`}>
                     <h1 className={`${Style.head_service}`}>IT Services</h1>
                     <div>
-                        <span className={`${Style.home}`}>HOME</span>
+                        <Link href="/index"><span className={`${Style.home}`}>HOME</span></Link>
                         <span className={`${Style.it_service}`}> / IT SERVICES</span>
                     </div>
                 </div>    
