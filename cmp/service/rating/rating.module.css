@@ -45,7 +45,19 @@
         width: 100%;
         margin-bottom: 20px;  
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> service
     .num {
-        font-size: 20px;
+        font-size: 16px;
     }
+<<<<<<< HEAD
+=======
+    
+    .manRow {
+        margin-top: 10px;
+        margin-bottom: 40px;
+     }
+>>>>>>> service
 }

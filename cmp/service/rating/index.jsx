@@ -4,15 +4,17 @@ import Image from 'next/image';
 const Rating = () =>{
     return (
         <>
-            <h6 className={`text-center mb-5`} style={{fontSize:'18px', marginTop:'80px'}}>Challenges are just opportunities in disguise. 
-                <font className={`${Style.underlineText}`}><a href='/'>Take the challenge!</a></font> 
+            <h6 className={` text-center mb-5 animate__animated animate__fadeIn animate__slower`} style={{fontSize:'18px', marginTop:'80px'}}>Challenges are just opportunities in disguise.
+                <font className={`${Style.underlineText}`}><a href='/'>Take the challenge!</a></font>
             </h6>
             <div className={`container-fluid md-lg-5 p-0 m-0 ${Style.maniContainer}`}>
                 <div className={`${Style.ratingCont}`}>
                     <div className="container-fluid p-0 m-0">
                         <div className={`row p-0 m-0`}>
-                            <div className={`col-md-6 ${Style.manRow} text-center`}>
-                                <Image src="/man.webp" width={500} height={500} />
+                            <div className={`col-md-6 ${Style.manRow} d-flex align-items-center justify-content-center`}>
+                                <div className=' d-flex '>
+                                    <Image src="/man.webp" width={500} height={500} className=" mx-4" />
+                                    </div>
                             </div>
                             <div className={`col-md-6  ${Style.manRow} d-flex flex-column aligin-items-center justify-content-center`}>
                                 <div className={`d-flex flex-column align-items-center justify-content-center ${Style.rate}`}>
