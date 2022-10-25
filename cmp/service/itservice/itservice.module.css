@@ -19,11 +19,7 @@
     color: #696969;
     letter-spacing: 2px;
     cursor: pointer;
-    
-}
 
-.home:hover::before {
-    width: 0%;
 }
 
 .home:hover {
