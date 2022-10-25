@@ -45,13 +45,6 @@
     },
 
     {
-        "id":"3",
-        "label":"About",
-        "url":"/about",
-        "dropdown" : false
-    },
-
-    {
         "id":"4",
         "label":"Contact",
         "url":"/contact-us",

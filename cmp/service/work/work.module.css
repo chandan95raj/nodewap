@@ -9,7 +9,6 @@
 .workCont{
     padding-left: 85px;
     padding-right: 85px;
-
 }
 
 .workCard {
@@ -39,19 +38,15 @@
     font-size: 25px;
 }
 
-@media(max-width:768px){
-    
+@media(max-width:768px){   
     .successHead{
         font-size: 25px;
-        line-height: 30px;
-        /* text-align: justify !impor.tant; */
-        
+        line-height: 30px;      
     }
 }
 
 @media(max-width:768px){
     .workCont{
         padding: 20px;
-    
     }
 }
