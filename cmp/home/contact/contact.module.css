@@ -68,4 +68,13 @@
     .imgDiv {
         height: 100%;
     }
+    
+    .h1Div h1 {
+        line-height: 35px;
+        font-size: 30px;
+    }
+    .contRow {
+        padding-top:40px !important; 
+        padding-bottom:30px !important; 
+    }
 }

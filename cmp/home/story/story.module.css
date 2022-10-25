@@ -33,3 +33,20 @@
     outline: none;
     box-shadow: none;
 }
+
+@media(max-width:768px) {
+    .story,.frm {
+        height: auto;
+    }
+    .h1title {
+        text-align: center;
+    }
+
+    .btnlet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
