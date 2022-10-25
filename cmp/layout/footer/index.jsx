@@ -4,8 +4,21 @@ import {
     Col,
     Nav
 } from "react-bootstrap";
+
 import Link from "next/link";
 import Logo from '../../shared/logo';
+import data from "../navbar/menu.json"; 
+const MenuDesign = (data)=>{
+    return (
+        <>       
+            <Link href={data.menuInfo.url} passHref>
+                <a className="text-white">
+                    {data.menuInfo.label}
+                </a> 
+            </Link>     
+        </>
+    );
+}
 
 const Footer =()=>{
     const design = (
@@ -14,8 +27,8 @@ const Footer =()=>{
                 <Row>
                     <Col md="4" style={{lineHeight:"20px"}}>
                         <Logo />
-                        <p>nodewapitsolution@gmail.com</p>
-                        <p className="mb-4">094723 95194</p>
+                        <p><i className="fa fa-envelope-o"></i> {process.env.NEXT_PUBLIC_EMAIL}</p>
+                        <p className="mb-4"><i className="fa fa-phone"></i> +91 {process.env.NEXT_PUBLIC_PHONE_NUMBER}</p>
                         <div className={`${Style.icon_box}`}>
                             <Link href="https://twitter.com"><i className="fa fa-twitter"></i></Link>
                             <Link href="https://instagram.com/wapinstitution?igshid=YmMyMTA2M2Y="><i className="fa fa-instagram"></i></Link>
@@ -24,13 +37,27 @@ const Footer =()=>{
                         </div>
                     </Col>
                     <Col md="2" style={{lineHeight:"40px"}}>
-                        <h5>IT Services</h5>
-                    </Col>
-                    <Col md="2" style={{lineHeight:"40px"}}>
                         <h5>Quick links</h5>
+                        <div className="d-flex flex-column">
+                            {
+                                data.map((item)=>{
+                                    return <MenuDesign menuInfo={item} key={item.id} />;
+                                })
+                            }
+                        </div>
                     </Col>
-                    <Col md="2" style={{lineHeight:"40px"}}>
-                        <h5>Support</h5>
+                    <Col md="3" style={{lineHeight:"40px"}}>
+                        <h5>Terms</h5>
+                        <div className="d-flex flex-column">
+                            <Link href="/privacy-policy" passHref>
+                               <a className="text-white">Privacy Policy</a> 
+                            </Link>
+                            <Link href="/terms" passHref>
+                                <a className="text-white">
+                                    Terms & Conditions
+                                </a>
+                            </Link>
+                        </div>
                     </Col>
                     <Col md="2">
                         <div>

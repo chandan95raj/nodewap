@@ -3,21 +3,23 @@ import Style from './story.module.css';
 const Story = () =>{
     return (
         <>
-            <div className="container-fluid p-5">
+            <div className="container-fluid p-md-5">
                 <div className='row'>
                     <div className="col-md-8">
-                        <div className={` rounded ${Style.story}`}>
-                        <div className="row h-100 w-100">
+                        <div className={`rounded ${Style.story}`}>
+                            <div className="row h-100 w-100">
                                 <div className="col-md-6 d-flex align-items-center justify-content-center">
                                     <div className='text-center'>
-                                            <h1 className={`${Style.title}`}>49</h1>
-                                            <p className={`${Style.para}`}>YEARS IN THE FIELD</p>
+                                        <h1 className={`${Style.title}`}>49</h1>
+                                        <p className={`${Style.para}`}>YEARS IN THE FIELD</p>
                                     </div>
                                 </div>
                                 <div className="col-md-6 d-flex align-items-center justify-content-center">
-                                    <div className='text-start p-4'>
+                                    <div className='p-4'>
                                         <h1 className={`${Style.h1title}`}>Read Further to Our Success Stories</h1>
-                                        <button className={` btn btn-primary py-3 px-5 ${Style.btnlet}`}>Let's Talk </button>
+                                        <div className={`${Style.btnlet}` }>
+                                            <button className={`btn btn-primary py-3 px-5` }>Let's Talk </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

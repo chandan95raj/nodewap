@@ -37,3 +37,18 @@
     font-weight: 700;
     letter-spacing:2px
 }
+
+@media(max-width:768px) {
+    .title {
+        font-size: 20px;
+        text-align: left;
+        text-align: justify;
+    }
+    .desc {
+        text-align: justify;
+        font-size: 20px;
+        font-weight: 500;
+        padding-right: 0px;
+    }
+    
+}

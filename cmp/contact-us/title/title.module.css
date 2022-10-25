@@ -35,10 +35,9 @@
   font-weight:500;
   letter-spacing:2px;
 }
-.a_contact {
+.a_contact span {
   font-size:14px;
   font-family:sans-serif;
- font-weight:500;
- text-decoration:none solid rgb(109,112,166);
+ font-weight:600;
  letter-spacing:2px;
 }

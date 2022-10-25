@@ -26,13 +26,13 @@ const Client =()=>{
                         nodewap transform businesses with adaptable and powerful digital solutions that meet today’s needs and open up new opportunities for tomorrow.
                         </p>
                         <h6 className="pt-4">Nodewap</h6>
-                        <p>/ Web design </p>
+                        <p className="mb-5">/ Web design </p>
                     </Col>
                 </Row>
             </Container>
 
             <Container fluid>
-                <Row style={{backgroundColor:'#F8F8F8'}} className="py-5 px-5">
+                <Row style={{backgroundColor:'#F8F8F8'}} className="py-5 px-md-5 ">
                     <Col md="4">
                         <div className="d-flex">
                             <div className={`${Style.iconBox} d-flex justify-content-center align-items-center shadow`} style={{marginRight:"20px"}}>

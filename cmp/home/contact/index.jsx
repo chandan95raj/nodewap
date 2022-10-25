@@ -9,7 +9,7 @@ const Contact =()=>{
             <div className={`${Style.imgDiv}`}>
                 <div className={`${Style.imgoverlay}`}>
                     <div className="container-fluid">
-                        <Row className={`p-5 ${Style.contRow}`}>
+                        <Row className={`p-md-5 ${Style.contRow}`}>
                             <Col md="6" className="d-flex flex-column align-items-center justify-content-center">
                                 <div>
                                     <div className={`${Style.h1Div}`}>
@@ -24,7 +24,7 @@ const Contact =()=>{
                                 <div className={` text-center ${Style.contectDiv}`}>
                                     <i className={`fa fa-phone`} style={{color:'white', fontSize:'40px'}}></i>
                                     <h6>REACH OUT NOW</h6>
-                                    <h1>94723 95194</h1>
+                                    <h1>{process.env.NEXT_PUBLIC_PHONE_NUMBER}</h1>
                                     <button className="btn btn-light">Contact</button>
                                 </div>
                             </Col>

@@ -41,23 +41,19 @@ const Service =()=>{
                 </Row>
                 <Row className={`mb-5`}>
                     <div className="col-md-7 border m-auto p-4 rounded mt-5" style={{background:'#E7EDFA'}}>
-                        <div className="d-flex justify-content-around shadow-lg align-items-center " className={`${Style.mainMsg}`}>
+                        <div  className={`${Style.mainMsg}`}>
                             <div className={`shadow d-flex align-items-center justify-content-center ${Style.msgDiv}`}>
                                 <i className="fa fa-commenting-o text-primary" style={{fontSize:'30px'}}></i>
                             </div>
-                            <div className="d-flex justify-content-between">
-                
-                            <h6 style={{fontFamily:"sans-serif", fontSize:"18px", fontWeight:"bold"}}>
-                                Cheers to the work that comes from <br />trusted service providers in time.</h6>
-                            <button className="btn btn-primary px-4">Let's Talk</button>
-                        </div>
-                        </div>
-                        <div>
-                            
+                            <div className="d-flex flex-wrap justify-content-between align-items-center">                
+                                <h6 style={{fontFamily:"sans-serif", fontSize:"18px", fontWeight:"bold"}}>
+                                    Cheers to the work that comes from <br />trusted service providers in time.</h6>
+                                <button className="btn btn-primary px-4">Let's Talk</button>
+                            </div>
                         </div>
                     </div>
                 </Row>
-                    <h1 className={`text-center ${Style.fonth1} my-5 `}>We stand out for some reasons.</h1>
+                    <h1 className={`text-center ${Style.fonth1}`}>We stand out for some reasons.</h1>
             </Container>
         </>
     );
