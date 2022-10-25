@@ -19,10 +19,16 @@
     color: #696969;
     letter-spacing: 2px;
     cursor: pointer;
+    
+}
+
+.home:hover::before {
+    width: 0%;
 }
 
 .home:hover {
     /* work remain */
+    border-bottom: 1px solid blue;
 }
 
 .it_service{
