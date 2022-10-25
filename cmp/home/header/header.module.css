@@ -2,6 +2,9 @@
     padding-top:140px;
     padding-left:80px;
 }
+.titlecont {
+    padding-right: 50px;
+}
 
 .titleBox2 {
     padding-left:80px;
@@ -56,11 +59,15 @@
 
 @media(max-width:768px) {
     .titleBox {
-        padding-top:20px;
-        padding-left:40px;        
+        padding-top:130px;
+        padding-left:8px;        
+    }
+    .titlecont {
+        padding-right: 10px;
     }
     .titleBox2 {
-        padding-left:40px;        
+        padding-left:8px; 
+        padding-right: 8px;       
     }
     .title,.title2{
         font-size: 30px;
@@ -88,8 +95,9 @@
     }
     .imageBox {
         position: relative;
-        left:-20px;
+        left:-5px;
         padding:30px 0;
+        padding-left: 8px;
     }
 
 }

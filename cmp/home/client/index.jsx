@@ -33,7 +33,7 @@ const Client =()=>{
 
             <Container fluid>
                 <Row style={{backgroundColor:'#F8F8F8'}} className="py-5 px-md-5 ">
-                    <Col md="4">
+                    <Col md="4" className="my-3">
                         <div className="d-flex">
                             <div className={`${Style.iconBox} d-flex justify-content-center align-items-center shadow`} style={{marginRight:"20px"}}>
                                 <i className={`fa fa-smile-o ${Style.myIcon}` }></i>
@@ -45,7 +45,7 @@ const Client =()=>{
                         </div>
                     </Col>
 
-                    <Col md="4">
+                    <Col md="4" className="my-3">
                         <div className="d-flex">
                             <div className={`${Style.iconBox} d-flex justify-content-center align-items-center shadow`} style={{marginRight:"20px"}}>
                                 <i className={`fa fa-folder-open-o ${Style.myIcon}` }></i>
@@ -57,7 +57,7 @@ const Client =()=>{
                         </div>
                     </Col>
 
-                    <Col md="4">
+                    <Col md="4" className="my-3">
                         <div className="d-flex">
                             <div className={`${Style.iconBox} d-flex justify-content-center align-items-center shadow`} style={{marginRight:"20px"}}>
                                 <i className={`fa fa-users ${Style.myIcon}` }></i>

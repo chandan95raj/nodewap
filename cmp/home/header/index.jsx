@@ -18,7 +18,7 @@ const Header = ()=>{
             </Row>
 
             <Row className={`${Style.titleBox2}`} >
-                <Col md="6" style={{paddingRight:"50px"}} >
+                <Col md="6" className={`${Style.titlecont}`} >
                     <h1 className={`${Style.title2}`}>with<span> nodwap </span> software company</h1>
                     <p className={`${Style.subTitle}`}>As a leading software company in India. We Provide Website designing, E-commerce website, Mobile app developement & SEO Optimization & Digital Marketing.</p>
                     <div className={`${Style.formTitleCont}`}>

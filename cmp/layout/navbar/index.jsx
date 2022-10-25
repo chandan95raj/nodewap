@@ -15,7 +15,7 @@ const MenuDesign = (data)=>{
     const design =(
         <>       
             <Link href={data.menuInfo.url} passHref>               
-                <button className={` btn btn-white rounded-0 ${Style.mynav} mx-4`}>
+                <button className={`btn btn-white rounded-0 ${Style.mynav} mx-4`}>
                     {data.menuInfo.label}
                 </button>    
             </Link>       
@@ -42,7 +42,7 @@ const DropMenu = (data)=>{
 const NavbarCont =()=>{
     const design = (
         <>
-           <Navbar bg="white" expand="lg" className="shadow">
+           <Navbar bg="white" expand="lg" className="shadow fixed-top">
                 <Container fluid>
                     <Navbar.Brand href="#home">
                         <Logo />
