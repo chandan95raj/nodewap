@@ -3,21 +3,24 @@ import {
     Navbar,
     Container,
     Nav,
-    NavDropdown
+    NavDropdown,
+    Button
 } from "react-bootstrap";
 
 import data from "./menu.json";
 
 import Link from "next/link";
 import Logo from '../../shared/logo';
+import { useState } from "react";
+import { useEffect } from "react";
 
 const MenuDesign = (data)=>{
     const design =(
         <>       
             <Link href={data.menuInfo.url} passHref>               
-                <button className={`btn btn-white rounded-0 ${Style.mynav} mx-4`}>
+                <a className={`${Style.mynav} mx-4`}>
                     {data.menuInfo.label}
-                </button>    
+                </a>    
             </Link>       
         </>
     );
@@ -40,17 +43,43 @@ const DropMenu = (data)=>{
 }
 
 const NavbarCont =()=>{
+    const[stickey,changeStickeyData] = useState("fixed-top py-4");
+
+    useEffect(()=>{
+        window.onscroll =()=>{
+            let tmp = "";
+            let top = window.scrollY;
+            if(top > 100)
+            {
+                tmp ="bg-white shadow-sm fixed-top py-4 sticked";
+            }
+            else{
+                tmp ="fixed-top py-4";
+            }
+            return changeStickeyData(tmp);
+        }
+    },[])
+
     const design = (
         <>
-           <Navbar bg="white" expand="lg" className="shadow fixed-top">
-                <Container fluid>
-                    <Navbar.Brand href="#home">
-                        <Logo />
-                    </Navbar.Brand>
+           <Navbar expand="lg" className={stickey}>
+                <Container>
+                    <Link href="/" passHref>
+                        <a className="text-dark">
+                            <Logo small={false} />
+                        </a>
+                    </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className=" justify-content-end w-100">
-                       {
+                    <Navbar.Collapse id="basic-navbar-nav">                   
+
+                    <Nav className="justify-content-center w-100">
+                        <Link href="" passHref>               
+                            <a className={`${Style.mynav} mx-4`}>
+                                Helpline : +91 {process.env.NEXT_PUBLIC_PHONE_NUMBER}
+                            </a>    
+                        </Link>
+
+                        {
                             data.map((item)=>{
                                 if(item.dropdown){
                                   return <DropMenu menuInfo={item} key={item.id} />  
@@ -58,11 +87,17 @@ const NavbarCont =()=>{
                                 return <MenuDesign menuInfo={item} key={item.id} />;
                             })
                        } 
-
+                    </Nav>
+                    <Nav>
+                        <Link href='/contact-us'>
+                            <Button className={`${Style.btnGrad}`}>
+                                Get A Quote
+                            </Button> 
+                        </Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
-                </Navbar> 
+            </Navbar>    
         </>
     );
     return design;

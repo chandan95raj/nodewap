@@ -34,7 +34,7 @@ const Rating = () =>{
                                             </div>
                                             <div className={`${Style.callCont}`}>
                                                 <p className={`${Style.call}`}>CALL FOR ADVICE NOW!</p>
-                                                <h3 className={`${Style.num}`}>+91 94723 95194</h3>
+                                                <h3 className={`${Style.num}`}>+91 {process.env.NEXT_PUBLIC_PHONE_NUMBER}</h3>
                                             </div>
                                         </div>
                                         <div className={` d-flex align-items-center ${Style.callDiv}`}>
@@ -43,7 +43,7 @@ const Rating = () =>{
                                             </div>
                                             <div className="callCont">
                                                 <p className={`${Style.call}`}>SAY HELLO</p>
-                                                <h3 className={`${Style.num}`}>nodewapitsolution@gmail.com</h3>
+                                                <h3 className={`${Style.num}`}>{process.env.NEXT_PUBLIC_EMAIL}</h3>
                                             </div>
                                         </div>
                                     </div>

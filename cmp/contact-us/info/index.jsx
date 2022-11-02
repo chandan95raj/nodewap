@@ -13,8 +13,8 @@ const Info = () =>{
             <h5 className={`${Style.con_heading}`}>India</h5>
             <ul className={`${Style.conact_info__list}`}>
               <li>4, Jiya Lal Roy Rd, Muzaffarpur, Bihar 842001</li>
-              <li ><a href="#" className={`${Style.css_efect}`}>nodewapitsolution@gmail.com</a></li>
-              <li className={`${Style.css_efect}`}>(+91) 94723 95194</li>
+              <li ><a href="#" className={`${Style.css_efect}`}>{process.env.NEXT_PUBLIC_EMAIL}</a></li>
+              <li className={`${Style.css_efect}`}>(+91) {process.env.NEXT_PUBLIC_PHONE_NUMBER}</li>
             </ul>
           </div>
         </Col>
@@ -23,8 +23,8 @@ const Info = () =>{
             <h5 className={`${Style.con_heading}`}>India</h5>
             <ul className={`${Style.conact_info__list}`}>
               <li>4, Jiya Lal Roy Rd, Muzaffarpur, Bihar 842001</li>
-              <li><a href="#" className={`${Style.css_efect}`}>nodewapitsolution@gmail.com</a></li>
-              <li className={`${Style.css_efect}`}>(+91) 94723 95194</li>
+              <li><a href="#" className={`${Style.css_efect}`}>{process.env.NEXT_PUBLIC_EMAIL}</a></li>
+              <li className={`${Style.css_efect}`}>(+91) {process.env.NEXT_PUBLIC_PHONE_NUMBER}</li>
             </ul>
           </div>
         </Col>
@@ -33,8 +33,8 @@ const Info = () =>{
             <h5 className={`${Style.con_heading}`}>India</h5>
             <ul className={`${Style.conact_info__list}`}>
               <li>4, Jiya Lal Roy Rd, Muzaffarpur, Bihar 842001</li>
-              <li ><a href="#" className={`${Style.css_efect}`}>nodewapitsolution@gmail.com</a></li>
-              <li className={`${Style.css_efect}`}>(+91) 94723 95194</li>
+              <li ><a href="#" className={`${Style.css_efect}`}>{process.env.NEXT_PUBLIC_EMAIL}</a></li>
+              <li className={`${Style.css_efect}`}>(+91) {process.env.NEXT_PUBLIC_PHONE_NUMBER}</li>
             </ul>
           </div>
         </Col>
