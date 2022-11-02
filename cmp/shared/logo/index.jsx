@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const Logo = ()=>(
+const Small = ()=>(
     <>
         <div className="d-flex align-items-center">
             <div className="me-1">
@@ -18,4 +18,29 @@ const Logo = ()=>(
         </div>
     </>
 );
+
+const Large = ()=>(
+    <>
+        <div className="d-flex align-items-center">
+            <div className="me-1">
+                <Image 
+                    src="/nodewap-logo.png"
+                    width={50}
+                    height={50}
+                    alt="nodewap-logo"
+                />
+            </div>
+            <h3 style={{
+                fontWeight: 'bold',
+                fontFamily: 'aquire'               
+                }}>Nodewap</h3>
+        </div>
+    </>
+);
+
+const Logo = ({small=true})=>{
+    if(small) return <Small />;
+    return <Large />
+}
+
 export default Logo;
