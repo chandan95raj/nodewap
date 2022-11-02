@@ -112,9 +112,9 @@ const Footer =()=>{
                         <Col md="6">
                             <div className={`d-flex align-items-center justify-content-end`}>
                                 <div className={`d-flex align-items-center justify-content-evenly w-50`}>
-                                    <p>Terms</p>
-                                    <p>Privacy</p>
-                                    <p>Support</p>
+                                    <Link href="/"><a>Terms</a></Link>
+                                    <Link href="/"><a>Privacy</a></Link>
+                                    <Link href="/"><a>Support</a></Link>
                                 </div>
                             </div>
                         </Col>
