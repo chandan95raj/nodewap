@@ -2,7 +2,8 @@ import Style from "./footer.module.css";
 import {
     Row,
     Col,
-    Nav
+    Nav,
+    Container
 } from "react-bootstrap";
 
 import Link from "next/link";
@@ -23,57 +24,104 @@ const MenuDesign = (data)=>{
 const Footer =()=>{
     const design = (
         <>
-            <div className={`text-white px-5 py-5 ${Style.allText}`} style={{backgroundColor:"#000000"}}>
-                <Row>
-                    <Col md="4" style={{lineHeight:"20px"}}>
-                        <Logo />
-                        <p><i className="fa fa-envelope-o"></i> {process.env.NEXT_PUBLIC_EMAIL}</p>
-                        <p className="mb-4"><i className="fa fa-phone"></i> +91 {process.env.NEXT_PUBLIC_PHONE_NUMBER}</p>
-                        <div className={`${Style.icon_box}`}>
-                            <Link href="https://twitter.com"><i className="fa fa-twitter"></i></Link>
-                            <Link href="https://instagram.com/wapinstitution?igshid=YmMyMTA2M2Y="><i className="fa fa-instagram"></i></Link>
-                            <Link href="https://www.youtube.com/channel/UCx86YvOOdq5KLqENKq6ZOng"><i className="fa fa-facebook"></i></Link>
-                            <Link href="https://www.facebook.com/wapinstitution/"><i className="fa fa-youtube"></i></Link>
-                        </div>
-                    </Col>
-                    <Col md="2" style={{lineHeight:"40px"}}>
-                        <h5>Quick links</h5>
-                        <div className="d-flex flex-column">
-                            {
-                                data.map((item)=>{
-                                    return <MenuDesign menuInfo={item} key={item.id} />;
-                                })
-                            }
-                        </div>
-                    </Col>
-                    <Col md="3" style={{lineHeight:"40px"}}>
-                        <h5>Terms</h5>
-                        <div className="d-flex flex-column">
-                            <Link href="/privacy-policy" passHref>
-                               <a className="text-white">Privacy Policy</a> 
-                            </Link>
-                            <Link href="/terms" passHref>
-                                <a className="text-white">
-                                    Terms & Conditions
-                                </a>
-                            </Link>
-                        </div>
-                    </Col>
-                    <Col md="2">
+        <div style={{background:'#091d3e', color:'white'}}>
+                <Row className={`w-100 p-0 m-0 ${Style.footerRow}`}>
+                    <Col md="4" className={` mb-4 ${Style.footerPadding} ${Style.footerlf} `}>
                         <div>
-                            <img src="google.webp" className="mb-3 rounded" />
-                            <img src="apple.webp" className="mb-3 rounded"  />
+                            <Logo />
+                            <p className={`${Style.myfont} my-4`}>Excellence decisively nay man yet
+                               impression for contrasted remarkably.
+                               There spoke happy for you are out. Fertile
+                               how old address did showing
+                            </p>
+                            <div className={`d-flex  justify-content-between ${Style.socialIcon}`}>
+                                <div className={`${Style.iconDiv} d-flex align-items-center justify-content-center`}>
+                                <Link href={process.env.NEXT_PUBLIC_FACEBOOK}><i className={`fa fa-facebook text-white`}></i></Link>
+                                </div>
+
+                                <div className={`${Style.iconDiv} d-flex align-items-center justify-content-center`}>
+                                    <Link href={process.env.NEXT_PUBLIC_TWITTER}><i className={`fa fa-twitter text-white`}></i></Link>
+                                </div>
+
+                                <div className={`${Style.iconDiv} d-flex align-items-center justify-content-center`}>
+                                <Link href={process.env.NEXT_PUBLIC_LINKEDIN}><i className={`fa fa-linkedin text-white`}></i></Link>
+                                </div>
+
+                                <div className={`${Style.iconDiv} d-flex align-items-center justify-content-center`}>
+                                <Link href={process.env.NEXT_PUBLIC_YOUTUBE}><i className={`fa fa-youtube text-white`}></i></Link>
+                                </div>
+                            </div>
                         </div>
                     </Col>
-                </Row>
-                <hr className="mt-5" />
 
-                <div className="d-flex justify-content-center align-items-center flex-column mt-5">
-                    <Logo />
-                    <small>&#169; Nodewap | All Rights Reserved</small>
-                </div>
+                    <Col md="2" className={` mb-4 ${Style.footerPadding}`}>
+                        <div className="d-flex flex-column align-items-start">
+                            <h5 className={`${Style.myfont} text-white mb-4`}  style={{fontWeight:'bold'}}>Solutions</h5>
+                            <Link href=""><a className={` ${Style.MenuLink}`}>IT Management</a></Link>
+                            <Link href="" ><a className={` ${Style.MenuLink}`}> Cloud Service</a></Link>
+                            <Link href="" ><a className={` ${Style.MenuLink}`}>Data Center</a></Link>
+                            <Link href="" ><a className={` ${Style.MenuLink}`}>Software Development</a></Link>
+                            <Link href="" ><a className={` ${Style.MenuLink}`}>Machine Learning</a></Link>
+                        </div>
+                    </Col>
 
-            </div>
+                    <Col md="3" className={`mb-4  ${Style.footerPadding} pe-5`}>
+                        <div className="d-flex flex-column align-items-start">
+                            <h5 className={`${Style.myfont} text-white mb-4`}  style={{fontWeight:'bold'}}>Contact Info</h5>
+                            <p className={`${Style.myfont} mb-4 `}>5919 Trussville Crossings Pkwy, new Dusting town, Austria</p>
+                            <div className={`d-flex `}>
+                                <div className={`pe-3`}>
+                                    <i className={`fa fa-clock-o ${Style.clock}`}></i>
+                                </div>
+                                <div>
+                                    <h6>Opening Hours:</h6>
+                                    <p className={`${Style.myfont}`}>8:00 AM – 7:45 PM</p>
+                                </div>
+                            </div>
+
+                            <div className={`d-flex `}>
+                                <div className={`pe-3`}>
+                                    <i className={`fa fa-user-o ${Style.clock}`}></i>
+                                </div>
+                                <div>
+                                    <h6>Phone:</h6>
+                                    <p className={`${Style.myfont}`}>+91 {process.env.NEXT_PUBLIC_PHONE_NUMBER}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
+
+                    <Col md="3" className={`ps-0 ${Style.footerPadding}`} style={{background:'#0C234A'}}> 
+                        <div className={`d-flex flex-column align-items-start px-lg-5 ${Style.newsletter} `}>
+                            <h5 className={`${Style.myfont}, ${Style.subs} text-white mb-4 `}  style={{fontWeight:'bold'}}>Subscribe To Newsletter</h5>
+                            <p className={`${Style.myfont} text-start`}> Join our subscribers list to get the latest news and special offers . </p>
+                            <form className={`${Style.formDiv}`}>
+                                <input type="text" className={`form-control py-3 mb-3`} placeholder="Your Email" required style={{background:'inherit', color:'#f5f5f5'}} />
+                                <button type="submit" className={`btn text-white  py-3 w-100 text-center ${Style.myfont}`} style={{background:'#104CBA'}}> Subscribe Now 
+                                 <i className={`fa fa-paper ${Style.tele}`}></i></button>
+                            </form>
+                            <p className={`${Style.myfont}`}>Please select atleast one list.</p>
+                        </div>
+                    </Col>
+                    <hr />
+                    <Row  className={`${Style.footerpadd} d-flex justify-content-around `}>
+                        <Col md="6">
+                            <p>&#169; Copyright 2022 All Rights Reserved by <Link href="/"><a style={{fontWeight:'bold', color:'white'}}>Nodewap</a></Link></p>
+                        </Col>
+
+                        <Col md="6">
+                            <div className={`d-flex align-items-center justify-content-end`}>
+                                <div className={`d-flex align-items-center justify-content-evenly w-50`}>
+                                    <p>Terms</p>
+                                    <p>Privacy</p>
+                                    <p>Support</p>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Row>  
+            </div>  
+         
         </>
     );
     return design;
