@@ -7,46 +7,139 @@
 }
 
 .workCont{
-    padding-left: 85px;
-    padding-right: 85px;
+    background-color: #E7EDF8;
+    padding-left: 130px;
+    padding-right: 130px;
 }
 
 .workCard {
-    padding: 50px 30px 50px 30px;
+    padding: 30px 20px;
     margin: 60px 0 0 0;
-    box-shadow :0 18px 40px rgb(51 51 51 / 10%);
-    border-radius: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
     position: relative;
 }
 
-.roundBox {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background-color: #D2A98E;
-    border: 1px solid #ccc;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: -27px;
+.workCard:hover {
+    background-color: white;
+    transform: 0.5s;
 }
 
-.roundBox:hover {
-    background-color: blue;
-}
 
 .arrowIcon{
     font-size: 25px;
 }
 
-@media(max-width:768px){   
+.imgDiv {
+    height: 280px;
+    width: 100%;
+    position: relative;
+}
+
+.downdiv {
+    padding-top: 100px !important;  
+}
+
+.stisfection {
+    background-image: url('/codebg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;    
+}
+
+.imgOpacity {
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.roundDiv {
+    width: 160px;
+    height: 160px;
+    border: 15px solid #0984D8;
+    border-radius: 50%;
+    border-bottom: 15px solid white;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1percent {
+    color: white;
+    font-weight: bold;
+    transform: rotate(-45deg);
+
+}
+
+.clint {
+    height: 280px;
+    width: 100%;
+    background-image: linear-gradient(to right, #001439 , #0059FC);
+    border-radius: 5px;
+}
+
+.clintCont {
+    position: relative;
+    bottom: -100px;    
+}
+
+@media(max-width:768px){
+
     .successHead{
         font-size: 25px;
         line-height: 30px;      
     }
-}
 
-@media(max-width:768px){
     .workCont{
         padding: 20px;
     }
+
+    .stisfection {
+        height: 400px;            
+    }
+
+    .clintCont {
+        padding: 20px;
+    }
+
+    .colround {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding-top: 30px;
+    }
+
+    .custdiv {
+        padding: 0 30px !important;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    .custdiv p{
+        line-height: 25px !important;
+    } 
+
+    .bgdiv {
+        margin-bottom: 200px;
+    }
+
+    .clint {
+        height: auto;
+        text-align: center;
+    }
+
+    .clint p{
+        line-height: 25px;
+        text-align: center;
+    }
+
+
+
 }

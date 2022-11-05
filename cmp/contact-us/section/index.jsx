@@ -1,26 +1,52 @@
 import {
   Container,
   Row,
-  Col
+  Col,
+  Card
 } from "react-bootstrap";
 import Style from "./section.module.css";
-import ContactForm from "../../shared/contact-form";
+
 const Section = () =>{
   return (
     <>
-      <Container className="my-5 py-4">
+    <Container fluid className={`py-5`}>
+      <Container className={` ${Style.maincont}`}>
         <Row>
-          <Col className="py-5">
-            <div className={`${Style.heading} px-4`}>
-              <h3>To make requests for further information,<br /><span className="text-primary">contact us </span> via our social channels.</h3>
-            </div>
-            <div className="sub_heading px-4">
-              <p>We just need a couple of hours!<br /> No more than 2 working days since receiving your issue ticket</p>
-            </div>
+          <Col md="4" className={`p-0 m-0`}>
+              <Card className={`p-5 flex-column align-items-center justify-content-center ${Style.allCard}`} >
+                  <div className={`${Style.roundDiv} d-flex align-items-center justify-content-center mb-4`}>
+                  <i className={`fa fa-phone`} style={{fontSize:'60px'}} aria-hidden="true"></i>
+                  </div> 
+                  <h3 style={{fontWeight:'bold'}} className={`mb-4`}>Hotline</h3>
+                  <p className={`text-center`} style={{lineHeight:'27px'}}>A wonderful serenity has taken posse of my entire soul, like these.</p>
+                  <h6>+4733378901</h6>
+              </Card>
           </Col>
-            <ContactForm />
+
+          <Col md="4" className={`p-0 m-0`}>
+              <Card className={`p-5 flex-column align-items-center justify-content-center ${Style.allCard}`}>
+                  <div className={`${Style.roundDiv} d-flex align-items-center justify-content-center mb-4`}>
+                  <i className={`fa fa-map-marker`} style={{fontSize:'60px'}} aria-hidden="true"></i>
+                  </div> 
+                  <h3 style={{fontWeight:'bold'}} className={`mb-4`}>Hotline</h3>
+                  <p className={`text-center`} style={{lineHeight:'27px'}}>A wonderful serenity has taken posse of my entire soul, like these.</p>
+                  <h6>+4733378901</h6>
+              </Card>
+          </Col>
+
+          <Col md="4" className={`p-0 m-0`}>
+              <Card className={`p-5 flex-column align-items-center justify-content-center ${Style.allCard}`}>
+                  <div className={`${Style.roundDiv} d-flex align-items-center justify-content-center mb-4`}>
+                  <i className={`fa fa-envelope-o`} style={{fontSize:'50px'}} aria-hidden="true"></i>
+                  </div> 
+                  <h3 style={{fontWeight:'bold'}} className={`mb-4`}>Hotline</h3>
+                  <p className={`text-center`} style={{lineHeight:'27px'}}>A wonderful serenity has taken posse of my entire soul, like these.</p>
+                  <h6>+4733378901</h6>
+              </Card>
+          </Col>
         </Row>
      </Container>
+     </Container> 
    </>
   );
 }

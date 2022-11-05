@@ -1,17 +1,16 @@
 import Navbar from "../layout/navbar";
 import Footer from "../layout/footer";
-import Title from "./title/index";
+import ContImg from "./contact";
+import Location from "./location";
 import Section from "./section/index";
-import Info from "./info/index";
-import Action from "./action/index";
+
 const Contact = () =>{
   return (
     <>
       <Navbar />
-        <Title />
+        <ContImg />
         <Section />
-        <Info />
-        <Action />
+        <Location />
       <Footer />
     </>
   );

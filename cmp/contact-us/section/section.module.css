@@ -1,26 +1,34 @@
-.heading {
-  border-left:4px solid #ECB390;
-  border-radius:2px;
-}
-.heading h3 {
- font-weight:bold;
-  font-size:40px;
-  font-weight:600;
-  line-height:56px;
-}
-.sub_heading p {
-  font-size:18px;
-  line-height:31.32px;
-  padding-left:25px;
+
+.roundDiv {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
 }
 
+.maincont {
+  background-image: url(/25.png);
+  background-size: cover;
+  background-color: rgb(16, 53, 121);
+  border-radius: 5px;
+  margin-bottom: 40px !important;
+}
 
-@media(max-width:768px){
-    .heading h3 {
-   font-weight:bold;
-    font-size:28px;
-    font-weight:600;
-    line-height:40px;
-  }
+.allCard {
+  background-color: inherit;
+  border: none;
+  box-shadow: 0px 1px 1px #ccc;
+  
+}
 
+.allCard h3 {
+  color: white;
+} 
+
+.allCard p {
+  color: white;
+}
+
+.allCard h6 {
+  color: white;
 }

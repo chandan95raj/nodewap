@@ -10,6 +10,19 @@
     padding:3px 20px;
   
   }
+
+  .chooseh5  {
+    color: #104cba;
+    font-size: 20px;
+    font-weight: 600;
+    background: -webkit-gradient(linear, left top, right top, from(#104cba), color-stop(#00ccff), to(#104cba));
+    background: linear-gradient(to right, #104cba, #00ccff, #104cba);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
   .contact_form .con_subject {
     width:96.5%;
     height:56px;
@@ -17,7 +30,7 @@
     margin-left:10px;
   }
   .con_message {
-    width:96.5%;
+    width:100%;
     margin:10px;
     margin-top:20px;
     height:150px;
@@ -76,3 +89,4 @@
       background-color:#F8F8F8;
     }
 }
+

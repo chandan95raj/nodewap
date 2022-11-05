@@ -1,8 +1,11 @@
 import NavbarCont from '../layout/navbar';
 import ItService from './itservice';
 import Work from './work';
-import Rating from './rating';
 import Footer from '../layout/footer';
+import OurGoals from './our-goal';
+import Plan from './Plan';
+import Team from './team';
+import Faq from './faq';
 
 const Service = ()=>{
     const design = (
@@ -10,8 +13,11 @@ const Service = ()=>{
           <NavbarCont  />
           <ItService />
           <Work />
-          <Rating />
-          <Footer />
+          <OurGoals />
+          <Plan />
+          <Team />
+          <Faq />
+          <Footer />          
         </>
     );
     return design;
