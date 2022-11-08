@@ -140,6 +140,8 @@
         text-align: center;
     }
 
-
+    .workCard {
+        background-color: white;
+    }
 
 }

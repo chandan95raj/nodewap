@@ -18,7 +18,7 @@ const MenuDesign = (data)=>{
     const design =(
         <>       
             <Link href={data.menuInfo.url} passHref>               
-                <a className={`${Style.mynav} mx-4`}>
+                <a className={`${Style.mynav} mx-4 my-2`}>
                     {data.menuInfo.label}
                 </a>    
             </Link>       
@@ -30,7 +30,7 @@ const MenuDesign = (data)=>{
 const DropMenu = (data)=>{
     const design = (
         <>
-        <NavDropdown className={`${Style.mynav} mx-4`} title={data.menuInfo.label} id="dropdown-container">
+        <NavDropdown className={`${Style.mynav} mx-4 my-2`} title={data.menuInfo.label} id="dropdown-container">
             {
                 data.menuInfo.dropdownMenu.map((item)=>{
                     return <MenuDesign menuInfo={item} key={item.id} />;
@@ -43,7 +43,7 @@ const DropMenu = (data)=>{
 }
 
 const NavbarCont =()=>{
-    const[stickey,changeStickeyData] = useState("fixed-top py-4");
+    const[stickey,changeStickeyData] = useState("bg-white fixed-top py-4");
 
     useEffect(()=>{
         window.onscroll =()=>{
@@ -51,10 +51,10 @@ const NavbarCont =()=>{
             let top = window.scrollY;
             if(top > 100)
             {
-                tmp ="bg-white shadow-sm fixed-top py-4 sticked";
+                tmp ="bg-white shadow fixed-top py-4 sticked";
             }
             else{
-                tmp ="fixed-top py-4";
+                tmp ="bg-white fixed-top py-4";
             }
             return changeStickeyData(tmp);
         }
@@ -74,7 +74,7 @@ const NavbarCont =()=>{
 
                     <Nav className="justify-content-center w-100">
                         <Link href="" passHref>               
-                            <a className={`${Style.mynav} mx-4`}>
+                            <a className={`${Style.mynav} mx-4 my-2`}>
                                 Helpline : +91 {process.env.NEXT_PUBLIC_PHONE_NUMBER}
                             </a>    
                         </Link>

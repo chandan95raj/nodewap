@@ -1,22 +1,26 @@
-import Client from "./client";
 import Header from "./header";
 import Service from "./service";
-import PicCarosel from "./picCarosel";
-import Contact from "./contact";
-import Work from "./work";
 import Story from "./story";
-
+import Team from "./team";
+import Solution from "./solution";
+import Pricing from "./pricing";
+import Feedback from "./feedback";
+import Faq from './faq';
+import Blog from "./blog";
 
 const Home = ()=>{
     const design=(
         <>
             <Header />
-            <Client />
             <Service />
-            <PicCarosel />
-            <Contact />
-            <Work />
-            <Story />
+            <Story />  
+            <Team />       
+            <Solution />
+            <Pricing />
+            <Feedback />
+            <Faq />
+            <Blog />
+            
         </>
     );
     return design;

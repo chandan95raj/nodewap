@@ -1,25 +1,12 @@
 import Style from "./footer.module.css";
 import {
     Row,
-    Col,
-    Nav,
-    Container
+    Col
 } from "react-bootstrap";
 
 import Link from "next/link";
 import Logo from '../../shared/logo';
-import data from "../navbar/menu.json"; 
-const MenuDesign = (data)=>{
-    return (
-        <>       
-            <Link href={data.menuInfo.url} passHref>
-                <a className="text-white">
-                    {data.menuInfo.label}
-                </a> 
-            </Link>     
-        </>
-    );
-}
+
 
 const Footer =()=>{
     const design = (
@@ -57,25 +44,25 @@ const Footer =()=>{
                     <Col md="2" className={` mb-4 ${Style.footerPadding}`}>
                         <div className="d-flex flex-column align-items-start">
                             <h5 className={`${Style.myfont} text-white mb-4`}  style={{fontWeight:'bold'}}>Solutions</h5>
-                            <Link href=""><a className={` ${Style.MenuLink}`}>IT Management</a></Link>
-                            <Link href="" ><a className={` ${Style.MenuLink}`}> Cloud Service</a></Link>
-                            <Link href="" ><a className={` ${Style.MenuLink}`}>Data Center</a></Link>
-                            <Link href="" ><a className={` ${Style.MenuLink}`}>Software Development</a></Link>
-                            <Link href="" ><a className={` ${Style.MenuLink}`}>Machine Learning</a></Link>
+                            <Link href="/service"><a className={` ${Style.MenuLink}`}>IT Management</a></Link>
+                            <Link href="/service" ><a className={` ${Style.MenuLink}`}>Cloud Service</a></Link>
+                            <Link href="/service" ><a className={` ${Style.MenuLink}`}>Data Center</a></Link>
+                            <Link href="/service" ><a className={` ${Style.MenuLink}`}>Software Development</a></Link>
+                            <Link href="/service" ><a className={` ${Style.MenuLink}`}>Machine Learning</a></Link>
                         </div>
                     </Col>
 
                     <Col md="3" className={`mb-4  ${Style.footerPadding} pe-5`}>
                         <div className="d-flex flex-column align-items-start">
                             <h5 className={`${Style.myfont} text-white mb-4`}  style={{fontWeight:'bold'}}>Contact Info</h5>
-                            <p className={`${Style.myfont} mb-4 `}>5919 Trussville Crossings Pkwy, new Dusting town, Austria</p>
+                            <p className={`${Style.myfont} mb-4 `}>Muzaffarpur , Bihar (India)</p>
                             <div className={`d-flex `}>
                                 <div className={`pe-3`}>
                                     <i className={`fa fa-clock-o ${Style.clock}`}></i>
                                 </div>
                                 <div>
                                     <h6>Opening Hours:</h6>
-                                    <p className={`${Style.myfont}`}>8:00 AM – 7:45 PM</p>
+                                    <p className={`${Style.myfont}`}>10:00 AM – 06:00 PM</p>
                                 </div>
                             </div>
 
@@ -87,6 +74,19 @@ const Footer =()=>{
                                     <h6>Phone:</h6>
                                     <p className={`${Style.myfont}`}>+91 {process.env.NEXT_PUBLIC_PHONE_NUMBER}</p>
                                 </div>
+                            </div>
+
+                            <div>
+                                <Link href='/developers' passHref>
+                                    <a className={`d-flex justify-content-center align-items-center ${Style.developer}`}>
+                                        <div className={`pe-3`}>
+                                            <i className={`fa fa-users ${Style.clock}`}></i>
+                                        </div>
+                                        <div>
+                                            <h6 className="pt-2 text-light">Developers</h6>
+                                        </div>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </Col>
@@ -104,17 +104,17 @@ const Footer =()=>{
                         </div>
                     </Col>
                     <hr />
-                    <Row  className={`${Style.footerpadd} d-flex justify-content-around `}>
+                    <Row  className={`${Style.footerpadd} d-flex justify-content-around`}>
                         <Col md="6">
                             <p>&#169; Copyright 2022 All Rights Reserved by <Link href="/"><a style={{fontWeight:'bold', color:'white'}}>Nodewap</a></Link></p>
                         </Col>
 
                         <Col md="6">
                             <div className={`d-flex align-items-center justify-content-end`}>
-                                <div className={`d-flex align-items-center justify-content-evenly w-50`}>
-                                    <Link href="/"><a>Terms</a></Link>
-                                    <Link href="/"><a>Privacy</a></Link>
-                                    <Link href="/"><a>Support</a></Link>
+                                <div className={`${Style.footerAction} d-flex align-items-center justify-content-evenly w-50`}>
+                                    <Link href="/terms"><a className="text-light">Terms</a></Link>
+                                    <Link href="/privacy-policy"><a className="text-light">Privacy</a></Link>
+                                    <Link href="/contact-us"><a className="text-light">Support</a></Link>
                                 </div>
                             </div>
                         </Col>

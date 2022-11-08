@@ -1,45 +1,66 @@
-import Style from './story.module.css';
-
-const Story = () =>{
+import Style from "./story.module.css";
+import {
+    Col,
+    Row,
+    Container 
+} from "react-bootstrap";
+import Image from 'next/image';
+const Story =()=>{
     return (
-        <>
-            <div className="container-fluid p-md-5">
-                <div className='row'>
-                    <div className="col-md-8">
-                        <div className={`rounded ${Style.story}`}>
-                            <div className="row h-100 w-100">
-                                <div className="col-md-6 d-flex align-items-center justify-content-center">
-                                    <div className='text-center'>
-                                        <h1 className={`${Style.title}`}>49</h1>
-                                        <p className={`${Style.para}`}>YEARS IN THE FIELD</p>
-                                    </div>
+        <> 
+        <Container fluid style={{background:'#E7EDF8'}} className={`${Style.mainCont}`}>
+                <Row>
+                    <Col md="6">
+                        <Image src="/14.png" 
+                            alt="14"
+                            height={485}
+                            width={630} 
+                        />
+                    </Col>
+                    <Col md="6" className={`${Style.rightDiv}`}>
+                        <div className={`${Style.allText}`}>
+                            <h4>
+                                    <span  className={`text-center me-2`}>
+                                        <Image 
+                                            src="/shape_line.png" 
+                                            width={35} 
+                                            height={10} 
+                                            alt="shape_line"                      
+                                        />
+                                    </span>                            
+                                OUR STORY
+                            </h4>
+                            <h2>
+                                Providing big data analytics <br /> Techniques & realtime solutions
+                            </h2>
+                            
+                            <p>
+                                Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on my jointure horrible margaret suitable he followed speedily. Indeed vanity excuse or mr lovers of on. By offer scale an stuff. Blush be sorry no sight sang lose
+                            </p>
+                        </div>
+                        <div className={`${Style.optionDiv}`}>
+                            <div className="d-flex pe-4">
+                                <div className={`me-3 `} >
+                                    <i className={`fa fa-check ${Style.iconBox}`}></i>
                                 </div>
-                                <div className="col-md-6 d-flex align-items-center justify-content-center">
-                                    <div className='p-4'>
-                                        <h1 className={`${Style.h1title}`}>Read Further to Our Success Stories</h1>
-                                        <div className={`${Style.btnlet}` }>
-                                            <button className={`btn btn-primary py-3 px-5` }>Let's Talk </button>
-                                        </div>
-                                    </div>
+                                <div>
+                                    <h5>Various Options</h5>
+                                    <p>Tedious so to behaved written account ferrars moments.</p>
+                                </div>
+                            </div>
+                            <div className="d-flex">
+                                <div className="me-3">
+                                    <i className={`fa fa-check ${Style.iconBox2}`}></i>
+                                </div>
+                                <div>
+                                    <h5>Professional Services</h5>
+                                    <p>Tedious so to behaved written account ferrars moments.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div className="col-md-4">
-                        <div className={`rounded ${Style.frm}`}>
-                            <div className={`p-5 text-center ${Style.formdiv}`}>
-                                <h6 className='mb-4'>Don’t miss our monthly newsletters with the best analyses.</h6>
-                                <form>
-                                    <input className="from-control p-3 mb-4 w-100 bg-white" type="text" placeholder="Your e-mail" />
-                                    <button className='btn btn-primary mb-4 w-100 py-2'>Subscribe</button>
-                                </form>
-                                <p className='mb-4'>Join 25,000+ Subscribers</p>
-                            </div> 
-                        </div>           
-                    </div> 
-                </div>
-            </div>
+                    </Col>
+                </Row>
+        </Container>    
         </>
     );
 }
