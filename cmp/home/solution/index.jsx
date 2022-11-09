@@ -60,10 +60,12 @@ const Solution =()=>{
                     <Col md="6">
                         <div className={`${Style.contectDiv} justify-content-end d-flex`}>
                             <Image 
-                                src="/21.png"
+                                src="/rocket.png"
                                 width={497}
                                 height={499}
-                                alt="solution-bg"
+                                alt="rocket"
+                                placeholder="blur"
+                                blurDataURL="/blurcardbg.webp" 
                             />
                         </div>
                     </Col>

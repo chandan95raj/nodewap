@@ -13,7 +13,13 @@ const BlogData = (data)=>{
     <>
       <Col md="4" className="pb-4">
         <div>
-          <Image src={data.allItem.imagePath} alt="blog-pics" width={352} height={264} />
+          <Image src={data.allItem.imagePath}
+            alt="blog-pics" 
+            width={352}
+            height={264}
+            placeholder="blur"
+            blurDataURL="/blurcardbg.webp" 
+          />
           <div className="py-2">
             <div className="d-flex pt-3">
               <p className="me-5" style={{fontSize:"16px",color:"#666666"}}>

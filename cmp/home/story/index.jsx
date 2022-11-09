@@ -11,10 +11,12 @@ const Story =()=>{
         <Container fluid style={{background:'#E7EDF8'}} className={`${Style.mainCont}`}>
                 <Row>
                     <Col md="6">
-                        <Image src="/14.png" 
-                            alt="14"
+                        <Image src="/storybg.png" 
+                            alt="storybg.png"
                             height={485}
                             width={630} 
+                            placeholder="blur"
+                            blurDataURL="/blurcardbg.webp" 
                         />
                     </Col>
                     <Col md="6" className={`${Style.rightDiv}`}>

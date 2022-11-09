@@ -21,11 +21,11 @@ const Location = ()=>{
 
                 <Col md="5">
                     <Image 
-                         src="/16.png"
+                         src="/mapbg.png"
                          width={500}
                          height={500}
                          alt="star"
-                         />
+                    />
                 </Col>
             </Row>
         </Container>

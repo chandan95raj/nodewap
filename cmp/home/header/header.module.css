@@ -1,9 +1,18 @@
 .mainCont {
     height: 620px;
-    background-image: url('/43.png');
+    background-image: url('/headRight.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
+}
+.headermodal {
+    color: #104cba;
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(to right, #104cba, #00ccff, #104cba);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .RightBg {
@@ -25,8 +34,7 @@
     background-position: left;
     position: absolute;
     top:0;
-    left: 0;
-    
+    left: 0;   
 }
 
 .mainbg {

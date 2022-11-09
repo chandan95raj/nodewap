@@ -13,17 +13,19 @@ const  TeamData = (allData)=>{
     { 
         return(
       <>
-        <Col md="3" className={`${Style.thiscol}`}>
+        <Col md="3" className={`${Style.thiscol} p-4`}>
             <Card className={`${Style.maincard}`}>
                 <Image 
                     src={allData.data.img} 
                     width={256}
                     height={304}
-                    alt="1"
+                    alt="teampictures"
+                    placeholder="blur"
+                    blurDataURL="/blurcardbg.webp" 
                     />
                 <div className={`${Style.downBg}`}>
                     <Image 
-                        src="/24.png"
+                        src="/teamlow.png"
                         width={350}
                         height={40}
                         alt="24"                         

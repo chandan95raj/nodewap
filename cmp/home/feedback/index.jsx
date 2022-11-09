@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Style from './feedback.module.css';
-import {Carousel} from 'react-bootstrap';
 import totalData from "./feedback.json";
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay} from "swiper";
 const FeedData =(data)=>{   
     return(
     <>
@@ -17,7 +17,9 @@ const FeedData =(data)=>{
                             src={data.allData.image} 
                             width={100} 
                             height={100} 
-                            alt='card1' 
+                            alt='sliderimage'
+                            placeholder="blur"
+                            blurDataURL="/blurcardbg.webp"  
                         />
                     </div>
                 </div>
@@ -30,8 +32,8 @@ const FeedData =(data)=>{
     </>
     );
 }
-
 const Feedback = ()=>{
+
     return(
         <>
         <div className={`${Style.bgDiv}`}>
@@ -39,17 +41,28 @@ const Feedback = ()=>{
                 <div className={`container `} style={{paddingTop:'220px'}}>
                     <div className={`row `}>
                         <h2 className={`text-light text-center ${Style.allText}`}>What people say about us</h2>
-                        <Carousel indicators={false}>                            
+                        <Swiper
+                            modules={[Autoplay]}
+                            loop={true}
+                            spaceBetween={50}
+                            slidesPerView={1}
+                            autoplay= {{
+                                delay: 5000,
+                                disableOnInteraction: false,
+                            }}
+                            onSlideChange={() => console.log('slide change')}
+                            onSwiper={(swiper) => console.log(swiper)}
+                        >                           
                           {    
                             totalData.map((item,index)=>{                            
                                 return (
-                                    <Carousel.Item key={index} >
-                                        <FeedData allData={item}  />
-                                    </Carousel.Item>
+                                    <SwiperSlide key={index}>
+                                        <FeedData allData={item} />
+                                    </SwiperSlide>
                                 );
                             })
                           } 
-                        </Carousel>                
+                        </Swiper>               
                     </div>
                 </div>
             </div>

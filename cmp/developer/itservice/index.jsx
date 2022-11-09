@@ -3,7 +3,7 @@ import Link from "next/link";
 const ItService = ()=>{
     return(
         <>
-            <div className={` ${Style.mainImage} animate__animated animate__fadeIn d-flex align-items-center justify-content-center contaner-fluid`}>
+            <div placeholder="blur" blurDataURL="/blurbgreact.png" className={` ${Style.mainImage} animate__animated animate__fadeIn d-flex align-items-center justify-content-center contaner-fluid`}>
             <div className={Style.opacityDiv}></div> 
                 <div className={`text-center`} style={{position:'absolute'}}>
                     <h1 className={`${Style.head_service}`}>Developers</h1>

@@ -12,7 +12,14 @@ const Faq = ()=>{
                 <div className={`col-md-6 p-4 `}>
                     <div className={`card border-0`}>
                         <Image 
-                            src="/faq.png" width={508} height={444} alt="faq" className={`${Style.faqimg}`} />
+                            src="/faq.png" 
+                            width={508} 
+                            height={444} 
+                            alt="faq" 
+                            className={`${Style.faqimg}`}
+                            placeholder="blur"
+                            blurDataURL="/blurcardbg.webp" 
+                        />
                     </div>
                 </div>
                 <div className={`col-md-6 d-flex flex-column  pt-4 justify-content-start `}>

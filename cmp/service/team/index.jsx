@@ -16,7 +16,8 @@ const Team = ()=>{
                                 <div className={`d-flex `}>
                                     <div className={`${Style.round} me-3`}>
                                         <Image 
-                                            src="/card1.jpg" width="100" height="100" alt='card1' />
+                                            src="/cardimgone.jpg" width="100" height="100" alt='card1' placeholder="blur"
+                                            blurDataURL="/blurcardbg.webp"  />
                                     </div>
                                     <div className={`d-flex flex-column  mb-4`}>
                                         <h5 style={{fontSize:'22px', fontWeight:'600', color:'#fff'}} className={`mt-2`}>Gavrau kumar</h5>
@@ -38,7 +39,8 @@ const Team = ()=>{
                                 <div className={`d-flex `}>
                                     <div className={`${Style.round} me-3`}>
                                         <Image 
-                                             src="/card2.jpg" width="100" height="100" alt='card1' />
+                                             src="/cardimgtwo.jpg" width="100" height="100" alt='card1' placeholder="blur"
+                                             blurDataURL="/blurcardbg.webp"  />
                                     </div>
                                     <div className={`d-flex flex-column  mb-4`}>
                                         <h5 style={{fontSize:'22px', fontWeight:'600', color:'#fff'}} className={`mt-2`}>Gavrau kumar</h5>

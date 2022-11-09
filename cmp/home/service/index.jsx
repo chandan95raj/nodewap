@@ -15,12 +15,14 @@ const Card = (data)=>{
                         src={data.allData.path}
                         width={60} 
                         height={60} 
-                        alt="service-image"                      
+                        alt="service-image"
+                        placeholder="blur"
+                        blurDataURL="/blurcardbg.webp"                       
                     />
                 </div>
                 <div className={`${Style.rightIcon} d-flex justify-content-center align-items-center`}>
                     <Image 
-                        src='/50.png'
+                        src='/servrtbgdotted.png'
                         width={128} 
                         height={200} 
                         alt="service-image"                      

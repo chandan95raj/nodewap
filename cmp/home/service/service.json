@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "path": "/6.png",
+        "path": "/reactlogo.png",
         "title": "Data Science",
         "para": "Indeed vanity excuse or lovers of on. By offer scale an energy. Blush be sorry no sight sang lose.",
         "url":""
@@ -10,7 +10,7 @@
 
     {
         "id": "2",
-        "path": "/7-1.png",
+        "path": "/mind.png",
         "title": "Machine Learning",
         "para": "Indeed vanity excuse or lovers of on. By offer scale an energy. Blush be sorry no sight sang lose.",
         "url":""
@@ -19,7 +19,7 @@
 
     {
         "id": "3",
-        "path": "/8-1.png",
+        "path": "/robot.png",
         "title": "Artificial intelligence",
         "para": "Indeed vanity excuse or lovers of on. By offer scale an energy. Blush be sorry no sight sang lose.",
         "url":""
@@ -27,7 +27,7 @@
     },
     {
         "id": "4",
-        "path": "/9.png",
+        "path": "/bar.png",
         "title": "Data Analytics",
         "para": "Indeed vanity excuse or lovers of on. By offer scale an energy. Blush be sorry no sight sang lose.",
         "url":""  

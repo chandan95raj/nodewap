@@ -8,23 +8,25 @@ import {
 } from "react-bootstrap";
 import Image from 'next/image';
 import Teams from './team.json';
-import Link from "next/link";
+import Link from "next/link"; 
 
 const  TeamData = (allData)=>{
     const[modalState,changeModalState] = useState(false);
     return(
       <>
-        <Col md="3" className={`${Style.thiscol} mb-4`}>
+        <Col md="3" className={`${Style.thiscol} mb-4  p-4`}>
             <Card className={`${Style.maincard}`}>
                 <Image 
                     src={allData.data.img} 
                     width={256}
                     height={306}
-                    alt="1"
+                    alt="teampictures"
+                    placeholder="blur"
+                    blurDataURL="/blurcardbg.webp" 
                     />
                 <div className={`${Style.downBg}`}>
                     <Image 
-                        src="/24.png"
+                        src="/teamlow.png"
                         width={350}
                         height={40}
                         alt="24"                         
@@ -49,7 +51,6 @@ const  TeamData = (allData)=>{
         <div className="text-center">
             <Button onClick={()=>changeModalState(true)}  className={`${Style.contactBtn}`}>Contact me</Button>
         </div>
-
         <Modal show={modalState}>
             <Modal.Header closeButton onClick={()=>changeModalState(false)}>
                 <Modal.Title className={`${Style.headermodal} p-0 m-0`}>CONTACT ME</Modal.Title>

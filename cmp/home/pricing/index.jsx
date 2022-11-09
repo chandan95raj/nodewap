@@ -27,10 +27,12 @@ const Pricing = ()=>{
                         <div className={`${Style.regplan} text-center`}>
                             <div className={`${Style.imgDiv} m-auto mb-4`}>
                             <Image
-                                    src="/price-1.png"
+                                    src="/priceone.png"
                                     width={150}
                                     height={150}
-                                    alt="4"
+                                    alt="priceone"
+                                    placeholder="blur"
+                                    blurDataURL="/blurcardbg.webp" 
                             />
                             </div>
                                 <h5 style={{fontWeight:'bold', color:'#232323'}}>Regular Plan</h5>
@@ -73,10 +75,12 @@ const Pricing = ()=>{
                         <div className={`${Style.preplan} text-center`}>
                             <div className={`${Style.imgDiv} m-auto mb-4`}>
                             <Image
-                                    src="/price-2.png"
+                                    src="/pricetwo.png"
                                     width={150}
                                     height={150}
-                                    alt="4"
+                                    alt="pricetwo"
+                                    placeholder="blur"
+                                    blurDataURL="/blurcardbg.webp" 
                             />
                             </div>
                                 <h5 style={{fontWeight:'bold', color:'#232323'}}>Primium Plan</h5>
@@ -126,10 +130,12 @@ const Pricing = ()=>{
                     <div className={`${Style.busiplan} text-center`}>
                         <div className={`${Style.imgDiv} m-auto mb-4`}>
                         <Image
-                                src="/price-3.png"
+                                src="/pricethree.png"
                                 width={150}
                                 height={150}
-                                alt="4"
+                                alt="pricethree"
+                                placeholder="blur"
+                                blurDataURL="/blurcardbg.webp" 
                         />
                         </div>
                             <h5 style={{fontWeight:'bold', color:'#232323'}}>Business Plan</h5>

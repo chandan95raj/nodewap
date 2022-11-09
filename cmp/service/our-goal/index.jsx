@@ -4,7 +4,7 @@ import Image from 'next/image';
 const CardImg = [
     {
         id: '1',
-        path: '/1-2.jpg',
+        path: '/goalone.jpg',
         title: 'Manage it service',
         para: 'Prevailed mr tolerably discourse assurance estimable everything melancholy uncommonly solicitude inhabiting projection.'
         
@@ -12,7 +12,7 @@ const CardImg = [
 
     {
         id: '2',
-        path: '/2-1.jpg',
+        path: '/goaltwo.jpg',
         title: 'Cyber Security',
         para: 'Prevailed mr tolerably discourse assurance estimable everything melancholy uncommonly solicitude inhabiting projection.'
         
@@ -20,7 +20,7 @@ const CardImg = [
 
     {
         id: '3',
-        path: '/3-3.jpg',
+        path: '/goalthree.jpg',
         title: 'Manage it service',
         para: 'Prevailed mr tolerably discourse assurance estimable everything melancholy uncommonly solicitude inhabiting projection.'
         
@@ -45,8 +45,10 @@ const Card = (data)=>{
                         src={data.allData.path}
                         width={352}
                         height={308}
-                        alt="image"
+                        alt="goal"
                         className={`${Style.cardImg} `} 
+                        placeholder="blur"
+                        blurDataURL="/blurcardbg.webp" 
                     />
             </div>
         </div>
