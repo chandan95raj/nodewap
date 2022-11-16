@@ -1,0 +1,80 @@
+.span{
+  color: #104cba;
+  font-size: 20px;
+  font-weight: 600;
+  background: -webkit-gradient(linear, left top, right top, from(#104cba), color-stop(#00ccff), to(#104cba));
+  background: linear-gradient(to right, #104cba, #00ccff, #104cba);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.mainTitle{
+  font-weight:600;
+}
+.bgCon{
+  background-image: url('../../../public/bgwire.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size:400px;
+  background-position:right;
+}
+.title{
+  font-size:15px;
+}
+.heading{
+  font-size:25px;
+  font-weight:bold;
+}
+.perfomanceBox{
+  margin:45px;
+  background-color:white;
+}
+@media(max-width :768px) {
+
+
+  .bgCon{
+    background-image: none;
+    background-position: bottom;
+    background-size:300px;
+  }
+  .Allbox{
+    margin:0;
+    padding:0;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+
+  }
+  .heading{
+    font-size:18px;
+    margin:0;
+    font-weight:bold;
+  }
+  .title{
+    font-size:15px;
+    margin:0;
+  }
+  .dataBox{
+    width:90% !important;
+    margin:0 !important;
+    margin:50px 0px !important;
+      margin-bottom: 5px !important;
+  }
+
+  .perfomanceBox{
+    width:90% !important;
+    margin:0px !important;
+    background-color:white;
+      margin:20px 0px !important;
+
+
+  }
+
+  .heading{
+    font-size:35px;
+    margin:10px 0px;
+    font-weight:bold;
+  }
+}
