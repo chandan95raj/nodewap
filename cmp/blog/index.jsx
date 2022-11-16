@@ -1,14 +1,11 @@
-import NavbarCont from '../layout/navbar'
-import BlogUpadate from './blogUpdate';
-import Footer from '../layout/footer';
-
+import BlogUpdate from './blogUpdate';
+import Recentpost from './recentpost';
 
 const Blog = ()=>{
     const design = (
         <>
-          <NavbarCont  />
-          <BlogUpadate />
-          <Footer />
+          <BlogUpdate />
+          <Recentpost />
         </>
     );
     return design;
