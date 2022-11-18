@@ -1,7 +1,10 @@
-const Contact =()=>{
+import TeamHeading from "./team-heading-details";
+import AddContact from "./add-contact";
+ const Contact =()=>{
     return(
         <>
-        <h1>Contact Admin</h1>
+         <AddContact />
+         <TeamHeading />
         </>
     )
 }
