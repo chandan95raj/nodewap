@@ -5,7 +5,8 @@ const Layout = ({children, open})=>(
         minHeight: '100vh',
         marginLeft: open ? 250 : 0,
         transition: '0.3s',
-        marginTop:85
+        marginTop:65,
+        padding:20
       }}>
         {children}
       </div>

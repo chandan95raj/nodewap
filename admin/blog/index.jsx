@@ -1,7 +1,10 @@
+import AddBlog from "./add-blog";
+import Section from "./section";
 const Blog =()=>{
     return(
         <>
-        <h1>Blog Admin</h1>
+        <AddBlog />
+        <Section />
         </>
     )
 }
