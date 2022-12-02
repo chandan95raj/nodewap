@@ -75,7 +75,7 @@ const NavbarCont =()=>{
                     <Nav className="justify-content-center w-100">
                         <Link href="" passHref>               
                             <a className={`${Style.mynav} mx-4 my-2`}>
-                                Helpline : +91 {process.env.NEXT_PUBLIC_PHONE_NUMBER}
+                                {process.env.NEXT_PUBLIC_EMAIL}
                             </a>    
                         </Link>
 

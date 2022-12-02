@@ -68,11 +68,11 @@ const Footer =()=>{
 
                             <div className={`d-flex `}>
                                 <div className={`pe-3`}>
-                                    <i className={`fa fa-user-o ${Style.clock}`}></i>
+                                    <i className={`fa fa-envelope ${Style.clock}`}></i>
                                 </div>
                                 <div>
-                                    <h6>Phone:</h6>
-                                    <p className={`${Style.myfont}`}>+91 {process.env.NEXT_PUBLIC_PHONE_NUMBER}</p>
+                                    <h6>Email:</h6>
+                                    <p className={`${Style.myfont}`}>{process.env.NEXT_PUBLIC_EMAIL}</p>
                                 </div>
                             </div>
 
